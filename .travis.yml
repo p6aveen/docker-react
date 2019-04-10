@@ -1,0 +1,6 @@
+sudo: required
+services:
+  - docker
+
+before_install:
+  - docker build -t p6aveen/docker-react -f Dockerfile.dev .
